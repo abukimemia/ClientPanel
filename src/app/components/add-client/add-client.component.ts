@@ -45,6 +45,7 @@ export class AddClientComponent implements OnInit {
     } else {
       // add new client
       this.clientService.newClient(value);
+      console.log(value);
       // show message
       this.flashMessage.show('New Client Added', {
         cssClass: 'alert-success',

@@ -52,6 +52,7 @@ export class EditClientComponent implements OnInit {
       value.id = this.id;
       // update client
       this.clientService.updateClient(value);
+      console.log(value);
       this.flashMessage.show('Client Updated!', {
         cssClass: 'alert-success', timeout: 4000
       });
